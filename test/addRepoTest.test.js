@@ -43,15 +43,13 @@ describe('add new repo', async () => {
   it('create a new repo', async function () {
     const res = await chai.request(app).post('/api/v1/repo').set('Cookie', `${cookie}`).send({
       project: 'finos',
-      name: 'test-repo',
-      url: 'https://github.com/finos/test-repo.git',
+      name: 'test-repo'
     });
     res.should.have.status(200);
 
     const repo = await db.getRepo('test-repo');
     repo.project.should.equal('finos');
     repo.name.should.equal('test-repo');
-    repo.url.should.equal('https://github.com/finos/test-repo.git');
     repo.users.canPush.length.should.equal(0);
     repo.users.canAuthorise.length.should.equal(0);
   });

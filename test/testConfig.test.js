@@ -39,8 +39,7 @@ describe('user configuration', function () {
       authorisedList: [
         {
           project: 'foo',
-          name: 'bar',
-          url: 'https://github.com/foo/bar.git',
+          name: 'bar'
         },
       ],
     };

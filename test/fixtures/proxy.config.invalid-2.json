@@ -1,9 +1,7 @@
 {
   "authorisedList": [
     {
-      "project": "finos",
-      "name": "git-proxy",
-      "link": "https://www.github.com/finos/git-proxy"
+      "project": "finos"
     }
   ]
 }

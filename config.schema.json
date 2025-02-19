@@ -85,10 +85,9 @@
       "type": "object",
       "properties": {
         "project": { "type": "string" },
-        "name": { "type": "string" },
-        "url": { "type": "string" }
+        "name": { "type": "string" }
       },
-      "required": ["project", "name", "url"]
+      "required": ["project", "name"]
     },
     "database": {
       "type": "object",
